@@ -3,10 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 img {
     width: 100%;
+    display: block;
 }
 
 /* UTILITY */
@@ -25,6 +29,29 @@ img {
 main {
     background-color: black;
     height: 90%;
+    padding: 50px 0;
+}
+
+.webcam-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px dotted yellow;
+}
+
+.card-utente {
+    border: 2px dotted greenyellow;
+    width: calc(100%/7 - 3px);
+    /* height: calc(100% / 5 -5px); */
+    position: relative;
+}
+
+.info-utente {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    background-color: rgba(58, 57, 57, 0.5);
+    padding: 5px;
 }
 
 
