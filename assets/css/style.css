@@ -27,11 +27,13 @@ img {
 /* -- MAIN -- */
 main {
     background-color: black;
-    height: 92%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 92%;
     padding-top: 3%;
+    
+    position: relative; /* per poter le view-options */
 }
 
 .webcam-view {
@@ -53,6 +55,21 @@ main {
     bottom:0%;
     background-color: rgba(58, 57, 57, 0.5);
     padding: 2%;
+    font-size: 0.8rem;
+}
+
+/* View-options in alto a detra */
+#view-options {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#view-options button {
+    background-color: rgba(128, 128, 128, 0.603);
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 
